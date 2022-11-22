@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Index</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=7742add4-5d3c-4060-9f01-67963d12fb4e&amp;lang=ru_RU" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__top">
+          <div class="inner">
+            <div class="header__addr">Воронеж, 7-й километр автодороги Воронеж-Москва, 3А</div><a class="header__phone" href="tel:+74732112156">+7 (473) 211-21-56</a><a class="ui-button" href="javascript:void(0);" onclick="">Обратный звонок<span class="ui-button__anim"><span></span></span></a>
+          </div>
+        </div>
+        <div class="header__main">
+          <div class="inner">
+            <div class="header__main-wrapper">
+              <div class="logo header__logo"><a class="logo__icon" href="#"><img src="img/icon_logo_black.svg" alt=""/></a>
+                <div class="logo__text">
+                  <div class="logo__name">Ринг Авто</div>
+                  <div class="logo__descr">Официальный дилер HAVAL</div>
+                </div>
+              </div>
+              <div class="header__burger">
+                <div class="header__close-burger"></div>
+                <ul class="header__menu">
+                  <div class="header__li"><a class="header__link" href="#products-section">Автомобили</a></div>
+                  <div class="header__li"><a class="header__link" href="#request">Тест драйв</a></div>
+                  <div class="header__li"><a class="header__link" href="#trade-in">Trade-in</a></div>
+                  <div class="header__li"><a class="header__link" href="#offers-section">Специальные предложения</a></div>
+                  <div class="header__li"><a class="header__link" href="#contacts">Контакты</a></div>
+                </ul><a class="ui-button" href="javascript:void(0);" onclick="">Обратный звонок<span class="ui-button__anim"><span></span></span></a>
+              </div>
+              <div class="header__open-burger"></div>
+            </div>
+          </div>
+        </div>
+        <div class="header__shadow"></div>
+      </header>
+      <main class="main">
+        <div class="banner">
+          <div class="inner">
+            <div class="banner__wrapper">
+              <h1 class="banner__h1">Кредит 0,01%</h1>
+              <h2 class="ui-h2 banner__ui-h2">Без дополнительных условий <br>Без скрытых переплат
+              </h2><a class="ui-button banner__ui-button ui-button--flare" href="javascript:void(0);" onclick="">Спецпредложения<span class="ui-button__anim"><span></span></span></a>
+            </div>
+          </div>
+          <div class="banner__img"><img src="img/banner_img.webp" alt=""/></div>
+        </div>
+        <section class="section section--mt0 section--bg-black90">
+          <div class="inner">
+            <div class="section-head section-head--center">
+              <h2 class="ui-h2 ui-h2--black">До конца акции осталось
+              </h2>
+            </div>
+            <div class="timer" id="timer" data-start="November 20, 2022 22:00:00" data-end="December 28, 2022 18:00:00">
+              <div class="timer__item">
+                <div class="timer__text">
+                  <div class="timer__value" id="timer-days"></div>
+                  <div class="timer__descr"></div>
+                </div>
+                <div class="timer__progress">
+                  <svg class="timer__svg" width="168" height="168" viewbox="0 0 168 168">
+                    <circle cx="84" cy="84" r="81" fill="none" stroke="#5c5c5c" stroke-width="6"></circle>
+                    <circle class="timer__anim" cx="84" cy="84" r="81" fill="none" stroke="#fff" stroke-width="6"></circle>
+                  </svg>
+                </div>
+              </div>
+              <div class="timer__item">
+                <div class="timer__text">
+                  <div class="timer__value" id="timer-hours"></div>
+                  <div class="timer__descr"></div>
+                </div>
+                <div class="timer__progress">
+                  <svg class="timer__svg" width="168" height="168" viewbox="0 0 168 168">
+                    <circle cx="84" cy="84" r="81" fill="none" stroke="#5c5c5c" stroke-width="6"></circle>
+                    <circle class="timer__anim" cx="84" cy="84" r="81" fill="none" stroke="#fff" stroke-width="6"></circle>
+                  </svg>
+                </div>
+              </div>
+              <div class="timer__item">
+                <div class="timer__text">
+                  <div class="timer__value" id="timer-minutes"></div>
+                  <div class="timer__descr"></div>
+                </div>
+                <div class="timer__progress">
+                  <svg class="timer__svg" width="168" height="168" viewbox="0 0 168 168">
+                    <circle cx="84" cy="84" r="81" fill="none" stroke="#5c5c5c" stroke-width="6"></circle>
+                    <circle class="timer__anim" cx="84" cy="84" r="81" fill="none" stroke="#fff" stroke-width="6"></circle>
+                  </svg>
+                </div>
+              </div>
+              <div class="timer__item">
+                <div class="timer__text">
+                  <div class="timer__value" id="timer-seconds"></div>
+                  <div class="timer__descr"></div>
+                </div>
+                <div class="timer__progress">
+                  <svg class="timer__svg" width="168" height="168" viewbox="0 0 168 168">
+                    <circle cx="84" cy="84" r="81" fill="none" stroke="#5c5c5c" stroke-width="6"></circle>
+                    <circle class="timer__anim" cx="84" cy="84" r="81" fill="none" stroke="#fff" stroke-width="6"></circle>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section" id="products-section">
+          <div class="inner">
+            <div class="section-head section-head--center">
+              <h2 class="ui-h2 ui-h2--black">Автомобили в наличии
+              </h2>
+            </div>
+            <div class="products">
+              <div class="products__item">
+                <div class="products__slider">
+                  <div class="products__photo">
+                    <div class="products__img products__img--active"><img src="img/products_img_0.webp" alt=""/></div>
+                    <div class="products__img"><img src="img/products_img_1.webp" alt=""/></div>
+                    <div class="products__img"><img src="img/products_img_2.webp" alt=""/></div>
+                    <div class="products__img"><img src="img/products_img_3.webp" alt=""/></div>
+                  </div>
+                  <div class="products__nav">
+                    <div class="products__bullet products__bullet--active" style="background:#BB4444"></div>
+                    <div class="products__bullet" style="background:#0F197C"></div>
+                    <div class="products__bullet" style="background:#000"></div>
+                    <div class="products__bullet" style="background:#4C4C4C"></div>
+                  </div>
+                </div>
+                <div class="products__content">
+                  <div class="products__info">
+                    <div class="products__name">HAVAL JOLION</div>
+                    <div class="products__price">от 1 899 000 ₽*</div>
+                  </div>
+                  <div class="products__stock">Автомобилей в&nbsp;наличии<span class="products__count">10</span></div><a class="ui-button products__ui-button" href="javascript:void(0);" onclick="">Узнать подробнее<span class="ui-button__anim"><span></span></span></a>
+                </div>
+              </div>
+              <div class="products__item">
+                <div class="products__slider">
+                  <div class="products__photo">
+                    <div class="products__img products__img--active"><img src="img/products_img_0.webp" alt=""/></div>
+                    <div class="products__img"><img src="img/products_img_1.webp" alt=""/></div>
+                    <div class="products__img"><img src="img/products_img_2.webp" alt=""/></div>
+                    <div class="products__img"><img src="img/products_img_3.webp" alt=""/></div>
+                  </div>
+                  <div class="products__nav">
+                    <div class="products__bullet products__bullet--active" style="background:#BB4444"></div>
+                    <div class="products__bullet" style="background:#0F197C"></div>
+                    <div class="products__bullet" style="background:#000"></div>
+                    <div class="products__bullet" style="background:#4C4C4C"></div>
+                  </div>
+                </div>
+                <div class="products__content">
+                  <div class="products__info">
+                    <div class="products__name">HAVAL DARGO</div>
+                    <div class="products__price">от 4 099 000 ₽*</div>
+                  </div>
+                  <div class="products__stock">Автомобилей в&nbsp;наличии<span class="products__count">1</span></div><a class="ui-button products__ui-button" href="javascript:void(0);" onclick="">Узнать подробнее<span class="ui-button__anim"><span></span></span></a>
+                </div>
+              </div>
+              <div class="products__item">
+                <div class="products__slider">
+                  <div class="products__photo">
+                    <div class="products__img products__img--active"><img src="img/products_img_0.webp" alt=""/></div>
+                    <div class="products__img"><img src="img/products_img_1.webp" alt=""/></div>
+                    <div class="products__img"><img src="img/products_img_2.webp" alt=""/></div>
+                    <div class="products__img"><img src="img/products_img_3.webp" alt=""/></div>
+                  </div>
+                  <div class="products__nav">
+                    <div class="products__bullet products__bullet--active" style="background:#BB4444"></div>
+                    <div class="products__bullet" style="background:#0F197C"></div>
+                    <div class="products__bullet" style="background:#000"></div>
+                    <div class="products__bullet" style="background:#4C4C4C"></div>
+                  </div>
+                </div>
+                <div class="products__content">
+                  <div class="products__info">
+                    <div class="products__name">GWM Wingle 7</div>
+                    <div class="products__price">от 2 299 000 ₽*</div>
+                  </div>
+                  <div class="products__stock">Автомобилей в&nbsp;наличии<span class="products__count">18</span></div><a class="ui-button products__ui-button" href="javascript:void(0);" onclick="">Узнать подробнее<span class="ui-button__anim"><span></span></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="request" id="request">
+            <div class="inner">
+              <div class="request__wrapper">
+                <div class="request__title">ЗАПИШИТЕСЬ НА ТЕСТ драйв прямо сейчас!</div>
+                <form class="request__form" action="#">
+                  <div class="ui-input request__ui-input ui-input--error" data-error-text="Введите номер телефона">
+                    <input id="requestPhone" placeholder="Телефон" type="text" name="phone"/>
+                  </div>
+                  <button class="ui-button request__ui-button ui-button--flare">Записаться на тест драйв<span class="ui-button__anim"><span></span></span>
+                  </button>
+                  <div class="request__agree">Нажимая кнопку вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+                  </div><br/><a href="javascript:void(0)" onclick="window.getPopup(&quot;#popup-thank&quot;); setTimeout(() =&gt; {Fancybox.close(true)}, 4000)">попап "спасибо"</a>
+                </form>
+              </div>
+            </div>
+            <div class="request__img"><img src="img/request_img.webp" alt=""/></div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="inner">
+            <div class="trade-in" id="trade-in">
+              <div class="trade-in__content">
+                <h2 class="ui-h2 trade-in__ui-h2 ui-h2--black">Пора менять автомобиль
+                </h2>
+                <div class="trade-in__descr">Дополнительная выгода при&nbsp;покупке автомобиля по&nbsp;программе Trade-in</div>
+                <div class="trade-in__profit">до 150 000 рублей</div><a class="ui-button trade-in__ui-button" href="javascript:void(0);" onclick="">Получить предложение<span class="ui-button__anim"><span></span></span></a>
+              </div>
+              <div class="trade-in__img"><img src="img/trade_in_img.webp" alt=""/></div>
+            </div>
+          </div>
+        </section>
+        <section class="section" id="offers-section">
+          <div class="inner">
+            <div class="section-head section-head--center">
+              <h2 class="ui-h2 ui-h2--black">Специальные предложения
+              </h2>
+            </div>
+            <div class="offers">
+              <div class="offers__item">
+                <div class="offers__img"><img src="img/offers_img_0.webp" alt=""/></div>
+                <div class="offers__content">
+                  <div class="offers__text">HAVAL Direct: ставка на надежность! <br>Приобретите новый HAVAL по кредитной ставке 0,01%*</div><a class="ui-button offers__ui-button" href="javascript:void(0);" onclick="">Узнать подробнее<span class="ui-button__anim"><span></span></span></a>
+                </div>
+              </div>
+              <div class="offers__item">
+                <div class="offers__img"><img src="img/offers_img_1.webp" alt=""/></div>
+                <div class="offers__content">
+                  <div class="offers__text">Купить новый HAVAL в лизинг. <br>Получите индивидуальное предложение.</div><a class="ui-button offers__ui-button" href="javascript:void(0);" onclick="">Узнать подробнее<span class="ui-button__anim"><span></span></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section--bg-grey section--ov-hidden" id="service-section">
+          <div class="inner">
+            <div class="section-head section-head--center">
+              <h2 class="ui-h2 ui-h2--black">Официальный сервис HAVAL Ринг Авто
+              </h2>
+            </div>
+            <div class="service">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="service__item swiper-slide">
+                    <div class="service__icon"><img src="data:image/png;base64,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" alt=""/></div>
+                    <div class="service__text"><b>Сервисное обслуживание</b> <br>всего модельного ряда</div>
+                  </div>
+                  <div class="service__item swiper-slide">
+                    <div class="service__icon"><img src="data:image/png;base64,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" alt=""/></div>
+                    <div class="service__text"><b>Оригинальные</b> <br> запчасти</div>
+                  </div>
+                  <div class="service__item swiper-slide">
+                    <div class="service__icon"><img src="data:image/png;base64,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" alt=""/></div>
+                    <div class="service__text"><b>Онлайн запись</b></div>
+                  </div>
+                  <div class="service__item swiper-slide">
+                    <div class="service__icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAAEICAMAAACUKJrNAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAAFiUAABYlAUlSJPAAAABLUExURUdwTP///+Li4v////////////////j4+P///////////wAAAP///w0NDejo6H5+fmZmZkpKSiAgIL6+vqqqqtra2pSUlDQ0NMzMzLi7gWcAAAALdFJOUwCZ6DC4Z0T63RiG6ddbEgAAD8lJREFUeNrsXem6oygQvflixCSyiuj7P+kkgggGl8SCaKb5lcn07b4eq06dWoC/vy+s6zm/3E6nrHis0qzHxyzLTrdLnl//fn5dHwBk9tmnV5E9APlRPK4PCFD51kLZLT//FAj55V0MXDQu+U+AcN4AggPG+eCUcNsMgqWNU35YUsjAULCGcT2eLUCjYNax7ALQI0I+cj6MS5SRV3EAFznHNAaHLk77hiLPymQry//BYD1klzBcijL52iEU34Bhh1CkdoqdQvFNGDra3EcEuZ7Kr689BNM0umFRV9y+7RVFuZNVfFN4X2/ljtb3/CNH5a7Wl+LHNSt3t75hFPthh68axb7YwV1pw8e1KHe7ioTucUHljhe6/O/dIq177NktUrpHjsoDrCJ6+epSHmRFdo9TWf5DYp9i8htliiPQZArKPBoOsZA4Hg5xkDgfEIcY5ZozKg+50PkfDjGQOC4OsEgcGQdIJK5FeegFFTuOjgMUEsfHAQaJX8ABBIms/ImVbW5tlj+ybv9wMGtTSTcvf2jlOyZK8ljphNXnhBkZB8nx/Y65TKVbPw4dcQkCsbtZnOybMCMXrPn9nhyJjwjzGtdi6d1ZbM80EZcgZAeA4E+aeKx2oE+0M5qITBBNh0NdlnX3qdFf1xRjodCeaCIyQZCnIeDq+bHtTEI+v6Q4vqPkO1MQT6qk+mMXPQQpZdNTRrUf54je2iPU6odadGbQDNzZ7Cb9StvqlffxkjtxjsQ1CDQYg5BdWMUx+fKNGJq4512JHgb18BkRnS9XR45zZAPw/7O1EpN1AlPdbUD5tnNEdQykRCNd0sS9zjbPjjpgeFRZtQcppXSstKhYcrCGUuHofHn7fo6hn9K8/KpnSazctKsTFg35Nl/GZUpxtxZB+ET22cnOu4r5a5xWGERUHJiVCciSQ1MFM1NMvsuXMcr3pFKUqhaVVZ9LIDmQQ8By44fQ7AuakjDz0IJ2HxrkkAMNMlLl5+bfMAn40CmxL59xS5gNmfVc+eqbKQe8QdARDnc6Qw6DyoofQi9pDUKNccA9OWBJlli1iRnJi6QGUWscuKoq1Xh4MLRcuekrFulNAtwgmJZLL/VavkiE8UNokdAgiFtdIOqdeoPOzb9UmAA3iMrJnyrHNZZNHqn48jJL1/Kl9q3W3GOIegnBJn71ctokYEUlIq1+nNrV01x/N0+VdS80eNwmUxYzy3g8vqSMN0Jg8zR1qVw9XS29age12K3AM3zaSaTqHt8av0MIIz29IBGUW7iLvE7QdQifASZW/37r+wwNtpZSaYJpgWBdYkPsHKcToeXo6WmJQIZRgbpMsS6gsbMN4ICF4Mw6hW/mU1k2WpOFRKfLz0vXSDiP3zweX8m2a2o7ybb/+qUh0ZFdNRa1dLPfOSBVSpNOyLZ2e/qOmb/o6ea1UG2r+pgZhCpGqy/Q5eeewYNakVo7CYiBl0K1U6JoHSbBjKSmyw2qEgd6dFI4fFFNJGMC+XraK9yZvBXHDh45nIjoHsB/4dwrPgQqTboDbsyoCikHeU8jJzI4VSlGyUNNB3JopzQDtSnHQA6ekHwrZ4fzjS0JOPOC4dC86jp7U5pBZ9ks0PJz+dTyZ0SquIDlW17J2Zq5CZldcxuzqVhDAy2/oUIlhgBcJfKNTYw0dG3rUWe7f+BQ2u2qcr/l51QyrH3Fm5jwfGNbJaIfBwsqQ9RMNLfbWRKgPbfURo7E44kcrt+pg6EKN6/acHFuQU9z+/CtCOpQuHWDq9ERN9l4ifw8kHaT2Zafke140F444rwEAhyRUQ7B12HNoMJCY0Ivtb0/VTh+qeoMVr0mNug3cqpy6YTQgJ4OIkvT4OAE0I3FysHMw2mjn3avSraZluam0BE548hggqdTUyKz+WnrJ9uzLb+OInrIYqcbCCJ4olU1Jas0aovabB27aww1am0TBCqAbqAIxOfIYRxC0TI5OCYkUuFgSWIDRaiVGWLHlwKvQs1TnTgBDpYkNrggX5kT1XhGaIQpIsFU9ogktqgIvrZBSd/JJIn9w0lwKMvrZq6kXqVpGvL36tMyMQ6GJLYkGkSs4TM1lWzPmw9OVdQ36cYmOaWWm9tts0wOLWVOJq4pWLSpcDBsuUmu9JWmmT8hloWG8h+8+xFRJ8NBs+XGJvhic7teJAfbAVFD8sJZuk3jhi23jofwhfm3jkbmhMag0RfGJp6oyjj+kgOknvXSjE/VNHTm9Xod5GbeH57BJ4qpXCCm8end3YIxWEJlH2ruPZveDjbqW1SL0STG+MgJYmAIBUMoFWvCX5+zPSzBWAZWi6Isgk1kIKN0gea2FJPMIXnDOWOUKiX7nLzjhj4zZVIpRSljnDesHdUoItnEc+YS4K8ZF6r7qn5IcrLnVJE/UNEnViQwdzOIS/d4AfgKJswIWeXlR7blF8ocXze7uuVb+jpy0jc0qHEcEQeJK8hwZefpWDeCRy2/6QQ7GCgCQ0jSqWg87EOXgsEnUc8wU6a1HSGfnJIxkOHRyN2Y+Vqv5zm8fGVBqXEMk8iB5q+1RiaBll/AiTghdVtVUiqqXvQRqtSTRau2rUk3nIUdIJ4syaIcrXAB2uWps1CxmGzT98x66HeZjIUhqu0EOhG5Qe1ulGH2Cz5Z/Z6haco13CAiJegnsAHsZk0lTjf71/+lrUMHtbhHLFzBAWGGLfHspGj1pnvr6Qo0QiJG4SqDG8nvxORCfZq9G/mYm+MbJKIU8ArAzSpIqmqN/7yjj5VnQh0ScQp4xV/Kw0PI27s5a/8nCGsiTZYlBULnEi5FoLoOMSsZeEaM6DdWG7T4S4eDkc/WspHiYSWunDkALZ+a+HXcZEC044yUNBNlKekyaj/5H72EmQgIO2RsK1BETORdtV/nUWv7pYcAwk4DWJUxjBOMeEP31/HgC/3kZuQB9RRA2IYfdg6S0fbBzJEK7age5+1z6YcJhDw4EDyQkfI+mSR+h0gz6qisb3NzdWgg5D1QnxbW/lt3ul8PKr6W+IxN4frIQLAA7eum3vhjP28RCJbGKOI5RwJBFZqh0E+PbPgQLmYKJk/ZnbKkobZHYx9LDam2nCs+iagT2aBJV02miwpjt9fBgdY1HTqGWkE0M0W+cIsVkXpPQDzScNzQFk3knDJQaRhqWmiWIOz/DPQHUPWMwM1WKODqEf24mGAVCuXSPPSlV7KfIwgTTsaPSxQ3gG49jiYDO5HNKVpi7u9DQcHI5yChFgkiBGZL3dI/2QsQarQjXtUjwqfBkpbNImoRbqpPuFflobAdiBPYoY3qtZXHKjJDl0/3ppwzrbP0CNIUQfiqq5bstSG2EYgb2AE7uvKuGu9XFGbrXrN4TAqdl9BOCJa+KTz8kAMAcQE7WEYZ2x34yxmNU0vV63mCMO2d9sXyms7oIIDIwQ64VYMTI+kccs1ssRIvhZzpszzboXQ5oNxQE59ggLjCA/E0C+GXGvAsEOY86GnZWA3buvCwWYi4XLwRiOvfHzgQPqFLa/nNQlo2k1DpDhlyc3onNEFYBNwpXBoINCZ0tiJhksv97SFx8yXpIzS1EEAUcKdPKa8drgm9oVpMkNlagpdioLoNpSxy0FMPTe3HDf2PbgMigzv9eawjhCOp1NxoB3EUBOm8SvCXSEv8IwlaxTGojjjBndTnhzXqJRxijgIcgqjE5Ajuizglkgk4IC5wJ9RVDoWNUtBqblOHQxCV85bHOz1D4hQ5tLxxE30OeP6zTqK5fG3isZk9HY6CQN4bVity+cfPtEbLbtz6dd28TcH5nRSjVbCTKaap0qQY9aCyG6bdf5x+0cnI8nAStrGWiZJcZCmnqRI5NYhhklmHkSogJWJVsbMkNziyaap0FQQZEkwVMnYWsYp9SnLPDJ/sZ3spRjtgUgfcQIqIVew8wWn5dnj4dQDVJQjz9HwIMx4Q/QBnpO1uZ4A98iuqmX0lqp1NMXRVsvUFdS9SRNQTTxH8Ea/Bir7VSf7goRqlGFw3emszSTHwop3aj3XnRgZ9CvTzOBg2HRz8HYyGIJCvmQI7EfrRChytzXUBPv1YK8Og+dpZ9cEo+MveTndkwsoIO94d8QDcHOQgjeGNzh1dbE9fYa5U9EcmneGRYbCmib87GsGeA23POcVhSjNMgd1jGtlYnOLxXlmV4OTXDPSoeDdjCg/5mMkX6+mKvTo9eshl5rZEePRRGfewHYACrnnfJjXmc7s13rJaPNf1gVURICRhMkfaV9ImksH5Gi4IdJ+V6cCupKrs43dRUe/vepq5v/Q5TG8sfT3s+FsKyhgnyOsDWusRmiuaTgatOC77wwV58kwOeVub6UxwZDhTja6BBl9wozMI9iIFk1CY1id9KbtDL7jNbRnwXSvOTqPOcAmOCgQcgV6gbzIchsypTSaben4pM0hlVyc3q/kf6rwPDogr+CUjxDtKTAOxpoqnRkWcpRuICCgQpwjXznhz9UcBIo9xyyfhwp6hchAgikj3viL/190/EKfoVzIdBIhz9Is+jwFEEf/atmMAcYl/KfIhgAhfknz7/wFxSnCB/CGAuCa4wu4IQGQpLjX8HAiRDIg8xVXZnwEhV2TYYEBM33yafx2IsqKLh6CCAXFJchXuh0Cs/Zt5TIMAFVX7B+KS5rrs3QNRJLpAffdAzF+gDhc49g7EvEEABo5PgSAoDRALBgFnEp8BgZrl47BBgMiWcAAzic+AYCu2cIIAcV0EAmr/475zjdMyDlB1iV0DgVYYBFRdYtdA3P5WreLXgSjW4QDDl3sG4rwSCBC+3DEQp7U4gPDlfoEorquBgHCO/QJx+XtjZb8LxOkdHP6uxa8C8Y5jgDiHudR3fumNWs4Xei55/ofkpomZy9+b6wYBxH/tnLtyAyEMRS+zICSaFJn4/z81FJmdcReDQBL2qdzuGb3A2vW3OpRe9TCdHHXtMtngfiHjdWZ76GOpiLGV0yoDImav7Z6/WKnL6EsLBUPMDpjfj681PH52FQj9vzk8wKMetFcmrD3IsAj1xSpTCBOUczw0TJE+HtYs21mRMQ2/e6HUO4ie4eEEEzoe4pvQ8gBcoQeregEfE7oeIpvQ9RDXhLaHbiJkxWR1DzF7h16/iG1ijYd4JlZ56CZCncDyMg8bPufm6dx9iImCxVCIQlEJy4lQMlmwA/fXd22PB6C4nrdrwTY8pwcLdpLePi3u9HAZFEzYjjgMiiywwFtQVIIRvoKiCezwc13DBFuai5miNpjjIT+SwAPW1xSZ4AXL/uFIg6UKLvCGhQqHGixUOEuKp+ur/NFwN9Mtc0VNF7wj6zMkF0EIrsQrg4EQCFozb9ZMgmBIyVXbQgln4Y4LVsyIqBb+6oVCYPRQuHACNCGjSyCcxEXpVRs1pyI4EqGS8j/KBncFdKiDZx9UWso5M99W+s/++KkVukwM/AJ4hSmyBdcqegAAAABJRU5ErkJggg==" alt=""/></div>
+                    <div class="service__text"><b>Система бонусов</b> <br>и скидок</div>
+                  </div>
+                  <div class="service__item swiper-slide">
+                    <div class="service__icon"><img src="data:image/png;base64,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" alt=""/></div>
+                    <div class="service__text"><b>Персональный</b> <br> консультант</div>
+                  </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section--mt0">
+          <div class="about">
+            <div class="about__img"><img class="about__img-bg" src="img/about_img.webp" alt=""/><img class="about__img-layer" src="img/about_img2.png" alt=""/></div>
+            <div class="inner about__inner">
+              <div class="about__content">
+                <h2 class="ui-h2 about__ui-h2 ui-h2--black">О компании
+                </h2>
+                <div class="about__text">Ринг Авто – официальный дилер HAVAL в&nbsp;Старом Осколе. В&nbsp;нашем дилерском центре представлен полный модельный рядСвоим клиентам мы рады предложить выгодные кредитные программы, лизинг, автострахование и&nbsp;профессиональное сервисное обслуживание.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="inner">
+            <div class="contacts" id="contacts">
+              <div class="contacts__content">
+                <h2 class="ui-h2 contacts__ui-h2 ui-h2--black">Контакты
+                </h2>
+                <div class="contacts__wrapper">
+                  <div class="contacts__item">
+                    <div class="contacts__icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAAFiUAABYlAUlSJPAAAABUUExURUdwTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKf0qP0AAAAbdFJOUwBKt9QO8JTeIIMmelka5/v2wBPIBnA9rqFmMQfybGYAAALdSURBVEjHnVfZoqsgDFQUATdwt/X///OyyY7XHh5aCgwTkjCkRfHchoVNZK+LPzVyyQb6v4DLSzf0wQ/L8EZS8y0BTMEZyZ6tkQuaITG3lg1S7GnjMbqtm9Ob92pBM+ew8qPKHa3PTEsswuq7mnNH6wQalgG24oOLOO2gd8m0ViyEfcyrPDU8c9eHIHfQs+S9cyjiHtYoaRzLG8ub4CYXXTYcotv7HGF81Cn0yKoCuPQ+GmlDP7xfxr5v9I9Jxx9Y9sNOA75vKnK7/rF3Gt+ZhFvMNLIsFg29QdxAgTapvQuvSD9CZ0/TTm5nnPnAzZYuC64CcFFs0OFe+TysM2YLh36Csa9Ab3ee6z6ISFQwoiwTaIitaeMqcwTGSRRET1nOhyeHulQ6s4dY+kll9mk3XaE0eHCDcPMmscVMLTXfiCnzJ9+2NK+6BnSwwriroH3N/OL4NGpfm2g1k92Zf51u4sK8xE/WyklFia9ns6vT5OkJYKvpjjpVzfp15INDDiyW1qZ76IhbU/srzhorQ4CZXC63Ojb1eHJZonEXs9ZIJHN05uVrZh0uDB/xe/TkZbO4vNXwGiykY6w9naneP+jd5V5rKb9gfgsW2uBch8Sjhcm0nHvmGXKv+o3GgQxx69KH2fxzSvTYBqWJdwHDq34ETyclDhYcVCxJctfo8oR0WCQTvsWFvzjtmM1dES9PhiXf2GARdyrTAEt0nUs05ipfL70EDVZzH/m6wdUgfCo3UbOlRE91rt5je1TGUMcciT7z1aJ/Ifvj/HoZkfcaua7U4+WhUVacJbp5RsPolfG8tjze595Ta39KxGZ8qpHn9GOmtB1la1jLvGdLYCBL0dy88Dd6MGyTNfaJf/S2u+KiiRIZj0/KfntdJjZqcKLOOv4rcBiovG7aELu8Ecd90dVjd+PLd7zOYnmtAdk+RBaD1WtZLb7n5bfpp39ouEMWysj661+zuWwmROkINo/2H8QUUU+3+T0sAAAAAElFTkSuQmCC" alt=""/></div><a class="contacts__text" href="tel:+74732112156">
+                      <div class="contacts__p1">+7 (473) 211-21-56</div></a>
+                  </div>
+                  <div class="contacts__item">
+                    <div class="contacts__icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8BAMAAADI0sRBAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAAtUExURUdwTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK22XqcAAAAOdFJOUwDfnx2A6isNwtnNiatNJB/MXQAAAYZJREFUOMvdlT9Lw1AQwA8KzdRBBBGHDE5OEgWhRvAjdAkoLqEOwTXgIm7aIVsXd6F0cHPp7ugo/QpRA7bKfQbv/cnLe8klH6A35sfv3b3k7gKwsXE222qJ3QXAIMbWyJdwjh1xCYeIj/tsHCD+go/4whd1j1iASBFwtPdMCPAv5vU7LD4IfyeYp6wcjQTu+zhn5bHEcM1kFzIoTPoTJ2sMRw2d5AsocVMfYj42uKF7Uja4V9OVbDDpq6AhV5j07QqHSq6wk72ULWzrobiziy3de9WyjSv9FIuggY3uTUvZwaTvuLKLY6mTrAtzcUK9EwkZucP7Mc5IJ/mKKy3Bn1sfI8p8w1yM5Lkofkr1haVe4QTXqShe1GXei8EkT+Td5eWGuniDE1ylsofk8/oHpW6ayOOO33U7FHY7aLmlmShz1tGKdbnU9Rg0ZK0rnDh9aOlqBBnZGsETRlZjNFLjn3WMP+K6Y3nQWstaV08Ob12L67N77X3BwG+nxZJW7kPbyt1bbO6P5h9kpKn8bio7EgAAAABJRU5ErkJggg==" alt=""/></div><a class="contacts__text" href="mailto:haval@ringauto-haval.ru">
+                      <div class="contacts__p1">haval@ringauto-haval.ru</div></a>
+                  </div>
+                  <div class="contacts__item">
+                    <div class="contacts__icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAAFiUAABYlAUlSJPAAAABOUExURUdwTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANyQSi4AAAAZdFJOUwD7OtZb4Q3JH3inB2Y/FOqgh7zykyvDtUnRW6HvAAACW0lEQVRIx6VXWZakIBBkKTaxXEtt73/RbkhULBOUGX58Tw0JIyMXCEFXw0ynxEjpKObKsIY8Xo1R69dSRj+Cvhe6Yqt630PVmlycZaG6Ol6lfOm6rhp4RKTLkK/H4x+Z3O5admjQvhJQ+QlvCDN9P5uMCA8/EsWGz7e1xWkFuELQmsOzPhlT3Qdilx+X8F2RjcdboHsHzkrmA6nR10Cryt7ZwEIsPycxAPvEgICuIzatJ2OfgK1nPh7EO1xEYv7Ev/63OLFk3o1XnSd3/+rntye+ve4jfN2CvNx9xI8+3ir6EkI6CW7ag1L1Jd8tGIKzeAH8xqQEbJ1mtAFJ19UUgeGvzSaXLgNPQbImku4xmHinWNDalIIN6G1wJ9yAGWzprEltKVi6qtiR2dVUUgr2MiviQjaUg2dvjjGdyDnw4PKSAPk0WOB1fnFS5cA/oRSndqaedgIsebrOA22xJQhWLIfQ4TQKFt5oPFmxTGh6NRaqGUySLtc/AqVuqQ9Sxp5QNjbqDWJPlk6MM/UeSYxMSu7ZKy5dIqQkXKfbgaHVSDHIlKHYbOdpaC9DjRNOPGo1+xJ76VpSpTc9uxwNxxeitmDIg27FIun652DfzDnaue7nvPXkK99wRFNC+oi6Hkubexz1MFbIe6yEseL1HwPNWV05w4yk/2WU2krOoyGOy8T4SD/JzZs+WZT2wVXgTrV1C89nfOztt5G5v3x76vMjs4tYGw3ru/IyGtbHTALpLj4mDMOwDHN8TLhxAuPpA4q6tz+rUCRd2DPrG349lBXku32baobjoOoi8c7rFxexVscE7adzAAAAAElFTkSuQmCC" alt=""/></div>
+                    <div class="contacts__text">
+                      <div class="contacts__p1">пн - чт: с 08:00 по 20:00;</div>
+                      <div class="contacts__hours">
+                        <div class="contacts__hours-row">
+                          <div class="contacts__hours-item">пт: с 08:00 по 18:00</div>
+                          <div class="contacts__hours-item">вс: с 08:00 по 20:00</div>
+                        </div>
+                        <div class="contacts__hours-row">
+                          <div class="contacts__hours-item contacts__hours-item--output">сб: выходной</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contacts__item">
+                    <div class="contacts__icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAAFiUAABYlAUlSJPAAAABLUExURUdwTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALeL9wMAAAAYdFJOUwBiOXf37pwN4CDBKkkVgQW2jtapXMttVM63ecIAAAJ/SURBVEjHnVbrooYQEEzuX/d0e/8nPVYKher4Vwyzs7NLUcQHL7EaKSF0VrjkxZdRMrp5g7LqPbTfbkO9g/PBrhdqaNuhF/aTvSBfzWZpj5vjj0Q7k1E+Yk2wfRn+lQZOH6iXgBXrfQIBe1rmsBKwc5SeHAGdYd7A9iohDAfqokmCGZybFJWDlCwp1mXrCmE8eSI1OiiSCvunwU6rZdzzO6LzV60/f3Hs6rMqhXOXKP246igYBDnUrInvTVJ7gUWj5jqi3uO3UVx1RYUNhdJFRmOKAmCy+5iUWemkgsC7/WNK8IZ47KZtyA7Qrd1WhzPEtT6UFGHKgMhBVud6joDpuScEsPhT2EWt+dGIXnoBtkXgKbTnzcmBXXC+r/Vf5BZ0/lwXbnz3twx3z4Fl9OQlsaByrJYo7YIEgqGgEzgRdIMjEbXH02CQzN9livDTw3PcJLQ7tz9ccfFMR+LmRs55ULiHQjv26D+eh8NEE1cYkynkVVPlq2nFyHNqk+gFR2TmNKhkW9Wtl5I+Ws9w3Gn6xStoeko/XPPgrKCPIWfLksrCaS99I4lED7u0qK5uGWtrHqRsW4tMB5zSbX1N9z+woWZKm+yVkLkyoCRUavJinfsQ11IOy050OTBoNvJkZ17ydyxLcUNZtZytYxcpf1DLaRY5oc3dkGGy0dMFmnxZwLqrZipvnzCf7K7W/O4hdkv2O7VcsudX+Utphj1vacsL+RZsHh8yr38+2czvML/32KKbXdlDg9mqD2BT2TbZ7Ra/zx+S3Z6V+O2pb9qGebCpb2p5lb2rNRafByRo+eKtWzcc3lViPNnbF29db+z/qOUq+5O3bt2w/C+YzyTbbP8A7Ig+/F0FUBIAAAAASUVORK5CYII=" alt=""/></div>
+                    <div class="contacts__text">
+                      <div class="contacts__p1">Воронеж, 7-й километр автодороги Воронеж-Москва, 3А</div>
+                    </div>
+                  </div>
+                  <div class="contacts__item">
+                    <div class="contacts__icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8BAMAAADI0sRBAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAAqUExURQAAAEdwTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKmMHTsAAAANdFJOU2AAv+CFQp/rrxHSfgQYXQGkAAAAzklEQVQ4y2MQBIKI2ruoYKMgFDAAschddHAFWZoXQxquHSRte7dICRkoI7QDpUXv3pooiAzEENqB0gJ3LwhiSF/BL33XEb/0FfzSEO24pa/glwZrxyN9BYe0ADToArFLy6yFSDNilxacVotXGgx4R6UplBZTQgONKNLC6PnAkIrSgzhYjjKggUD6BQsBu2XQ3X1m0IQaisdAXEMqSksgp1JVIDdxGGRBjMoCDCTXQgtNmdq7RkoYQP3uZdwVFSTwcFVzyOU5lkoSCK63gmQAzz/yaQuZIeUAAAAASUVORK5CYII=" alt=""/></div>
+                    <div class="contacts__text">
+                      <div class="contacts__p1">ОГРН 1073667026278 ИНН 3664083289</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="contacts__footnote">ООО "Автолюкс Воронеж"</div>
+              </div>
+              <div class="contacts__map" id="contactsMap"></div>
+            </div>
+          </div>
+        </section>
+        <div class="popup-wrapper" id="popup-thank" style="display: none;">
+          <div class="form-thank">
+            <div class="form-thank__img"><img src="img/form_thank_img.webp" alt=""/></div>
+            <div class="form-thank__content">
+              <div class="form-thank__title">Заявка успешно отправлена!</div>
+              <div class="form-thank__descr">Наш менеджер скоро свяжется с вами</div>
+              <button class="ui-button form-thank__ui-button js-popup-close">Закрыть<span class="ui-button__anim"><span></span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="inner">
+          <div class="footer__top">
+            <div class="logo footer__logo"><a class="logo__icon" href="#"><img src="img/icon_logo_white.svg" alt=""/></a>
+              <div class="logo__text">
+                <div class="logo__name">Ринг Авто</div>
+                <div class="logo__descr">Официальный дилер HAVAL</div>
+              </div>
+            </div>
+            <ul class="footer__links">
+              <li class="footer__links-item"><a class="footer__links-link" href="#">Юридические данные</a></li>
+              <li class="footer__links-item"><a class="footer__links-link" href="#">Политика конфиденциальности</a></li>
+            </ul><a class="ui-button footer__ui-button ui-button--white" href="javascript:void(0);" onclick="">Обратный звонок<span class="ui-button__anim"><span></span></span></a>
+          </div>
+          <div class="footer__disclaimer">
+            Дисклеймер: <br>*** Предложение распространяется на новые автомобили HAVAL DARGO, HAVAL H9, HAVAL F7 и HAVAL F7x.Указанная процентная ставка 0,01% в год достигается при следующих условиях кредитования: первоначальный взнос от 20% стоимости автомобиля и выше, сумма кредита от 100 000 руб. до 6 500 000 руб, срок кредитования — 12 месяцев.Погашение равными ежемесячными (аннуитетными) платежами.Кредит предоставляется ПАО РОСБАНК (ИНН 7730060164, ОГРН 1027739460737, место нахождения: 123112, г. Москва, 1-й Красногвардейский проезд, д. 19, этаж 13. Генеральная Лицензия ЦБ РФ № 2272 от 28.01.2015. Условия по кредиту и тарифы могут быть изменены банком в одностороннем порядке. Обеспечение по кредиту — залог приобретаемого автомобиля.Условия кредитования актуальны на 01.11.22 г., подробнее уточняйте в официальных дилерских центрах HAVAL.Предложение носит информационный характер,
+             не&nbsp;является публичной офертой. Банк вправе отказать в выдаче автокредита.
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__copyright">© 2022, все права защищены</div>
+            <div class="footer__made">Разработка сайта <a href="https://promo01.ru/" target="_blank">“Генерация”</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="libs/fancybox/fancybox.js"></script>
+    <script src="libs/swiper/swiper-bundle.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
